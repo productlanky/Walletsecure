@@ -4,8 +4,8 @@ import { ArrowDownUp, Settings, Clock, RefreshCw, Wallet2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function App() {
-  const [fromToken, setFromToken] = useState('ETH');
-  const [toToken, setToToken] = useState('BTC');
+  const [fromToken, setFromToken] = useState('USDT');
+  const [toToken, setToToken] = useState('ETH');
 
   return (
     <div className="font-sans ">
@@ -46,7 +46,7 @@ export default function App() {
                 value={fromToken}
                 onChange={(e) => setFromToken(e.target.value)}
               >
-                <option value="ETH">ETH</option> 
+                <option value="ETH">USDT</option> 
               </select>
             </div>
             <div className="flex items-center justify-between w-full mt-4 pr-3">
@@ -72,7 +72,7 @@ export default function App() {
                 value={toToken}
                 onChange={(e) => setToToken(e.target.value)}
               >
-                <option value="BTC">BTC</option>
+                <option value="BTC">ETH</option>
               </select>
             </div>
             <div className="flex items-center justify-between w-full mt-4 pr-3">

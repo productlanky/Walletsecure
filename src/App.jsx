@@ -1,4 +1,3 @@
-'use client';
 
 import { useState } from 'react';
 import { ArrowDownUp, Settings, Clock, RefreshCw, Wallet2 } from 'lucide-react';

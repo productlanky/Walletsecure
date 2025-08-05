@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import WalletCon from "./components/WalletCon.jsx";
+import Header from "./components/Header.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Header />,
   },
   {
     path: "/connect",
